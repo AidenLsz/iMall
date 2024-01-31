@@ -3,14 +3,55 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
 			}
+		},
+		{
+			"path": "pages/404/404",
+			"style": {
+				"navigationBarTitleText": "404",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "pages/menu/index"
+		},{
+			"path": "pages/personal/index"
+		},{
+			"path": "pages/cart/index"
+		},{
+			"path": "pages/webview/index"
 		}
 	],
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/homepage.png",
+			"selectedIconPath": "static/homepage_s.png",
+			"text": "首页"
+		},{
+			"pagePath": "pages/menu/index",
+			"iconPath": "static/menu.png",
+			"selectedIconPath": "static/menu_s.png",
+			"text": "商品"
+		},{
+			"pagePath": "pages/cart/index",
+			"iconPath": "static/cart.png",
+			"selectedIconPath": "static/cart_s.png",		
+			"text": "购物车"
+			},{
+			"pagePath": "pages/personal/index",
+			"text": "个人",
+			"iconPath": "static/personal.png",
+			"selectedIconPath": "static/personal_s.png"
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	}
 }

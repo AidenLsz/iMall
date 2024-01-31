@@ -10,10 +10,16 @@
         },
         onHide() {
             console.log('App Hide')
+        },
+        onPageNotFound(){
+            uni.redirectTo({
+                url:'pages/404/404'
+            })
         }
     });
 </script>
 
-<style>
+<style lang="scss">
     /*每个页面公共css */
+    @import "uview-ui/index.scss"
 </style>
